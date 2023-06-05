@@ -13,7 +13,7 @@
         "type": "string"
       },
       "batchUUID": {
-        "type":"string"
+        "type": "string"
       },
       "longitude": {
         "type": "number"
@@ -69,31 +69,31 @@
       "timingInAdvanced": {
         "type": "integer"
       }
-    }
-  },
-  "required": [
-    "uid",
-    "deviceID",
-    "operatorID",
-    "azimuth",
-    "longitude",
-    "latitude",
-    "altitude",
-    "mRegistered",
-    "mTimeStamp",
-    "mCellConnectionStatus",
-    "mCi",
-    "mPci",
-    "mEarfcn",
-    "mBandwidth",
-    "mMcc",
-    "mMnc",
-    "rssi",
-    "rsrp",
-    "rsrq",
-    "rssnr",
-    "cqi",
-    "timingInAdvanced",
-    "batchUUID"
-  ]
+    },
+    "required": [
+      "uid",
+      "deviceID",
+      "operatorID",
+      "azimuth",
+      "longitude",
+      "latitude",
+      "altitude",
+      "mRegistered",
+      "mTimeStamp",
+      "mCellConnectionStatus",
+      "mCi",
+      "mPci",
+      "mEarfcn",
+      "mBandwidth",
+      "mMcc",
+      "mMnc",
+      "rssi",
+      "rsrp",
+      "rsrq",
+      "rssnr",
+      "cqi",
+      "timingInAdvanced",
+      "batchUUID"
+    ]
+  }
 }
