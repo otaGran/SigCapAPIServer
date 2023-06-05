@@ -1,0 +1,99 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "uid": {
+        "type": "integer"
+      },
+      "deviceID": {
+        "type": "string"
+      },
+      "operatorID": {
+        "type": "string"
+      },
+      "batchUUID": {
+        "type":"string"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "altitude": {
+        "type": "number"
+      },
+      "mRegistered": {
+        "type": "boolean"
+      },
+      "mTimeStamp": {
+        "type": "integer"
+      },
+      "mCellConnectionStatus": {
+        "type": "integer"
+      },
+      "mCi": {
+        "type": "integer"
+      },
+      "mPci": {
+        "type": "integer"
+      },
+      "mEarfcn": {
+        "type": "integer"
+      },
+      "mBandwidth": {
+        "type": "integer"
+      },
+      "mMcc": {
+        "type": "string"
+      },
+      "mMnc": {
+        "type": "string"
+      },
+      "rssi": {
+        "type": "integer"
+      },
+      "rsrp": {
+        "type": "integer"
+      },
+      "rsrq": {
+        "type": "integer"
+      },
+      "rssnr": {
+        "type": "integer"
+      },
+      "cqi": {
+        "type": "integer"
+      },
+      "timingInAdvanced": {
+        "type": "integer"
+      }
+    }
+  },
+  "required": [
+    "uid",
+    "deviceID",
+    "operatorID",
+    "azimuth",
+    "longitude",
+    "latitude",
+    "altitude",
+    "mRegistered",
+    "mTimeStamp",
+    "mCellConnectionStatus",
+    "mCi",
+    "mPci",
+    "mEarfcn",
+    "mBandwidth",
+    "mMcc",
+    "mMnc",
+    "rssi",
+    "rsrp",
+    "rsrq",
+    "rssnr",
+    "cqi",
+    "timingInAdvanced",
+    "batchUUID"
+  ]
+}
