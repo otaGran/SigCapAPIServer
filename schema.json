@@ -46,10 +46,16 @@
         "type": "integer"
       },
       "mMcc": {
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "mMnc": {
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "rssi": {
         "type": "integer"
