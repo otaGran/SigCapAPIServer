@@ -71,7 +71,6 @@
       }
     },
     "required": [
-      "uid",
       "deviceID",
       "operatorID",
       "azimuth",
