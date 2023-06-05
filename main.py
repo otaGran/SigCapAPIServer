@@ -9,13 +9,15 @@ with open('schema.json') as f:
 import json
 
 app = Flask(__name__)
+with open("pass.json", 'r') as file:
+    credential = json.load(file)
 
 # Database connection configuration
-db_host = 'localhost'
-db_port = '5432'
-db_name = 'postgres'
-db_user = 'postgres'
-db_password = 'passwd'
+db_host = credential['db_host']
+db_port = credential['db_port']
+db_name = credential['db_name']
+db_user = credential['db_user']
+db_password = credential['db_password']
 
 
 @app.route('/api/data', methods=['POST'])
