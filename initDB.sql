@@ -8,6 +8,8 @@ create table "SigCapDetails"
     "operatorID"            text,
     "batchUUID"             text,
     azimuth                 numeric,
+    pitch                   numeric,
+    roll                    numeric,
     longitude               numeric,
     latitude                numeric,
     altitude                numeric,

@@ -41,10 +41,10 @@ def receive_data():
 
         for item in data:
             # Execute the INSERT query
-            cursor.execute("INSERT INTO \"SigCapDetails\" (\"deviceID\", \"operatorID\",\"batchUUID\",azimuth,longitude, latitude, altitude, \"mRegistered\", "
+            cursor.execute("INSERT INTO \"SigCapDetails\" (\"deviceID\", \"operatorID\",\"batchUUID\",azimuth,pitch,roll,longitude, latitude, altitude, \"mRegistered\", "
                            "\"mTimeStamp\", \"mCellConnectionStatus\", \"mCi\", \"mPci\", \"mEarfcn\", "
                            "\"mBandwidth\", \"mMcc\", \"mMnc\", rssi, rsrp, rsrq, rssnr, cqi, \"timingInAdvanced\") "
-                           "VALUES (%(deviceID)s, %(operatorID)s,%(batchUUID)s,%(azimuth)s, %(longitude)s, %(latitude)s, %(altitude)s, %(mRegistered)s, "
+                           "VALUES (%(deviceID)s, %(operatorID)s,%(batchUUID)s,%(azimuth)s,%(pitch)s,%(roll)s, %(longitude)s, %(latitude)s, %(altitude)s, %(mRegistered)s, "
                            "%(mTimeStamp)s, %(mCellConnectionStatus)s, %(mCi)s, %(mPci)s, %(mEarfcn)s, "
                            "%(mBandwidth)s, %(mMcc)s, %(mMnc)s, %(rssi)s, %(rsrp)s, %(rsrq)s, %(rssnr)s, %(cqi)s, "
                            "%(timingInAdvanced)s)", item)

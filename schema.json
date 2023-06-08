@@ -15,6 +15,15 @@
       "batchUUID": {
         "type": "string"
       },
+      "azimuth": {
+        "type": "number"
+      },
+      "pitch": {
+        "type": "number"
+      },
+      "roll": {
+        "type": "number"
+      },
       "longitude": {
         "type": "number"
       },
@@ -80,6 +89,8 @@
       "deviceID",
       "operatorID",
       "azimuth",
+      "pitch",
+      "roll",
       "longitude",
       "latitude",
       "altitude",
