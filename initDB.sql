@@ -7,6 +7,7 @@ create table "SigCapDetails"
     "deviceID"              text,
     "operatorID"            text,
     "batchUUID"             text,
+    "recordTimeStamp"       timestamp,
     azimuth                 numeric,
     pitch                   numeric,
     roll                    numeric,

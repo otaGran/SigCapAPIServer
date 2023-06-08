@@ -15,6 +15,9 @@
       "batchUUID": {
         "type": "string"
       },
+      "recordTimeStamp": {
+        "type": "number"
+      },
       "azimuth": {
         "type": "number"
       },
@@ -88,6 +91,8 @@
     "required": [
       "deviceID",
       "operatorID",
+      "batchUUID",
+      "recordTimeStamp",
       "azimuth",
       "pitch",
       "roll",
