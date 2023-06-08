@@ -50,17 +50,18 @@ def receive_data():
                            "%(timingInAdvanced)s)", item)
 
 
-        conn.commit()
-        cursor.close()
-        conn.close()
+
 
         return jsonify({'message': 'Data stored successfully'})
-
     except jsonschema.exceptions.ValidationError as e:
         print(e)
         return jsonify({'error': 'JSON validation failed.', 'message': e.message}), 400
     except psycopg2.Error as e:
         return jsonify({'error': 'DB Error', 'message':e.message}), 500
+    finally:
+        conn.commit()
+        cursor.close()
+        conn.close()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=6000)
