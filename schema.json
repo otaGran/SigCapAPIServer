@@ -37,7 +37,7 @@
         "type": "number"
       },
       "gpsHorAccuracy": {
-        "type": "string"
+        "type": "number"
       },
       "altitude": {
         "type": "number"
