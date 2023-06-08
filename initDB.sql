@@ -31,7 +31,10 @@ create table public."SigCapDetails"
     roll                    numeric,
     "recordTimeStamp"       timestamp(3),
     "magAccuracy"           integer,
-    "gpsHorAccuracy"        numeric
+    "gpsHorAccuracy"        numeric,
+    valid                   text,
+    "validTime"             text,
+    "validComment"          text
 );
 
 alter table public."SigCapDetails"
