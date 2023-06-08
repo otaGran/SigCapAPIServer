@@ -1,22 +1,18 @@
 -- Drop the table if it exists
 DROP TABLE IF EXISTS "SigCapDetails";
 
-create table "SigCapDetails"
+create table public."SigCapDetails"
 (
-    uid                     SERIAL PRIMARY KEY,
+    uid                     serial
+        primary key,
     "deviceID"              text,
     "operatorID"            text,
     "batchUUID"             text,
-    "recordTimeStamp"       timestamp(3),
     azimuth                 numeric,
-    pitch                   numeric,
-    roll                    numeric,
-    "magAccuracy" integer,
     longitude               numeric,
     latitude                numeric,
     altitude                numeric,
-    "gpsHorAccuracy" numeric,
-    "mRegistered"           bool,
+    "mRegistered"           boolean,
     "mTimeStamp"            bigint,
     "mCellConnectionStatus" integer,
     "mCi"                   integer,
@@ -30,5 +26,15 @@ create table "SigCapDetails"
     rsrq                    integer,
     rssnr                   integer,
     cqi                     integer,
-    "timingInAdvanced"      integer
+    "timingInAdvanced"      integer,
+    pitch                   numeric,
+    roll                    numeric,
+    "recordTimeStamp"       timestamp(3),
+    "magAccuracy"           integer,
+    "gpsHorAccuracy"        numeric
 );
+
+alter table public."SigCapDetails"
+    owner to postgres;
+
+
