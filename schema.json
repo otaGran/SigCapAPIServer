@@ -91,7 +91,6 @@
     "required": [
       "deviceID",
       "operatorID",
-      "batchUUID",
       "recordTimeStamp",
       "azimuth",
       "pitch",
