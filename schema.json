@@ -28,7 +28,7 @@
         "type": "number"
       },
       "magAccuracy": {
-        "type": "string"
+        "type": "number"
       },
       "longitude": {
         "type": "number"
