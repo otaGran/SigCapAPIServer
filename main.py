@@ -44,7 +44,7 @@ def receive_data():
             cursor.execute("INSERT INTO \"SigCapDetails\" (\"deviceID\", \"operatorID\",\"batchUUID\",\"recordTimeStamp\",azimuth,pitch,roll,longitude, latitude, altitude, \"mRegistered\", "
                            "\"mTimeStamp\", \"mCellConnectionStatus\", \"mCi\", \"mPci\", \"mEarfcn\", "
                            "\"mBandwidth\", \"mMcc\", \"mMnc\", rssi, rsrp, rsrq, rssnr, cqi, \"timingInAdvanced\") "
-                           "VALUES (%(deviceID)s, %(operatorID)s,%(batchUUID)s,to_timestamp(%(recordTimeStamp)s/1000),%(azimuth)s,%(pitch)s,%(roll)s, %(longitude)s, %(latitude)s, %(altitude)s, %(mRegistered)s, "
+                           "VALUES (%(deviceID)s, %(operatorID)s,%(batchUUID)s,to_timestamp(%(recordTimeStamp)s/1000.0),%(azimuth)s,%(pitch)s,%(roll)s, %(longitude)s, %(latitude)s, %(altitude)s, %(mRegistered)s, "
                            "%(mTimeStamp)s, %(mCellConnectionStatus)s, %(mCi)s, %(mPci)s, %(mEarfcn)s, "
                            "%(mBandwidth)s, %(mMcc)s, %(mMnc)s, %(rssi)s, %(rsrp)s, %(rsrq)s, %(rssnr)s, %(cqi)s, "
                            "%(timingInAdvanced)s)", item)
