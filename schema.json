@@ -27,11 +27,17 @@
       "roll": {
         "type": "number"
       },
+      "magAccuracy": {
+        "type": "string"
+      },
       "longitude": {
         "type": "number"
       },
       "latitude": {
         "type": "number"
+      },
+      "gpsHorAccuracy": {
+        "type": "string"
       },
       "altitude": {
         "type": "number"
@@ -113,7 +119,9 @@
       "rssnr",
       "cqi",
       "timingInAdvanced",
-      "batchUUID"
+      "batchUUID",
+      "magAccuracy",
+      "gpsHorAccuracy"
     ]
   }
 }
