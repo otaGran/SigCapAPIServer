@@ -41,10 +41,10 @@ def receive_data():
 
         for item in data:
             # Execute the INSERT query
-            cursor.execute("INSERT INTO \"SigCapDetails\" (\"deviceID\", \"operatorID\",\"batchUUID\",\"recordTimeStamp\",azimuth,pitch,roll,longitude, latitude, altitude, \"mRegistered\", "
+            cursor.execute("INSERT INTO \"SigCapDetails\" (\"deviceID\", \"operatorID\",\"batchUUID\",\"recordTimeStamp\",azimuth,pitch,roll,\"magAccuracy\",longitude, latitude, altitude,\"gpsHorAccuracy\" ,\"mRegistered\", "
                            "\"mTimeStamp\", \"mCellConnectionStatus\", \"mCi\", \"mPci\", \"mEarfcn\", "
                            "\"mBandwidth\", \"mMcc\", \"mMnc\", rssi, rsrp, rsrq, rssnr, cqi, \"timingInAdvanced\") "
-                           "VALUES (%(deviceID)s, %(operatorID)s,%(batchUUID)s,to_timestamp(%(recordTimeStamp)s/1000.0),%(azimuth)s,%(pitch)s,%(roll)s, %(longitude)s, %(latitude)s, %(altitude)s, %(mRegistered)s, "
+                           "VALUES (%(deviceID)s, %(operatorID)s,%(batchUUID)s,to_timestamp(%(recordTimeStamp)s/1000.0),%(azimuth)s,%(pitch)s,%(roll)s,%(magAccuracy)s, %(longitude)s, %(latitude)s, %(altitude)s,%(gpsHorAccuracy)s, %(mRegistered)s, "
                            "%(mTimeStamp)s, %(mCellConnectionStatus)s, %(mCi)s, %(mPci)s, %(mEarfcn)s, "
                            "%(mBandwidth)s, %(mMcc)s, %(mMnc)s, %(rssi)s, %(rsrp)s, %(rsrq)s, %(rssnr)s, %(cqi)s, "
                            "%(timingInAdvanced)s)", item)
